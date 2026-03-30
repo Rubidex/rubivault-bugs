@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Vulnerabilidad de seguridad
+    url: https://github.com/Rubidex/rubivault-bugs/security/advisories/new
+    about: Por favor, NO reportes vulnerabilidades de seguridad como issues públicos. Usa GitHub Security Advisories para un reporte privado.

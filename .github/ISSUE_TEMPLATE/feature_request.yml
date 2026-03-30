@@ -1,0 +1,62 @@
+name: ✨ Feature Request
+description: Sugiere una nueva funcionalidad o mejora para RubiVault
+title: "[FEAT] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por tu idea! Las sugerencias de la comunidad son fundamentales para mejorar RubiVault. Por favor, completa los campos a continuación.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Verificación previa
+      description: Antes de continuar, confirma que has hecho lo siguiente.
+      options:
+        - label: He buscado en los [issues existentes](../../issues) y no encontré una solicitud similar.
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema o necesidad
+      description: ¿Tu solicitud está relacionada con un problema? Descríbelo claramente.
+      placeholder: "Me resulta frustrante cuando... / Necesito poder..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solución propuesta
+      description: Describe claramente qué funcionalidad o mejora te gustaría ver.
+      placeholder: "Me gustaría que RubiVault pudiera..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: ¿Has considerado otras soluciones o enfoques alternativos?
+      placeholder: "También consideré... pero prefiero la propuesta porque..."
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridad percibida
+      description: ¿Qué tan importante es esta funcionalidad para ti?
+      options:
+        - 🔴 Alta — bloquea mi flujo de trabajo actual
+        - 🟡 Media — mejoraría significativamente mi experiencia
+        - 🟢 Baja — sería una mejora agradable
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto adicional
+      description: Agrega cualquier otra información, mockups, capturas de pantalla o ejemplos que ayuden a entender la solicitud.
+      placeholder: "Ejemplos de cómo funciona en otras herramientas: / Adjunta imágenes aquí..."
