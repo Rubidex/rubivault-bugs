@@ -1,0 +1,114 @@
+name: 🐛 Bug Report
+description: Reporta un error o comportamiento inesperado en RubiVault
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tomarte el tiempo de reportar este bug. Por favor, completa todos los campos para ayudarnos a entender y reproducir el problema.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Verificación previa
+      description: Antes de continuar, confirma que has hecho lo siguiente.
+      options:
+        - label: He buscado en los [issues existentes](../../issues) y no encontré un reporte duplicado.
+          required: true
+        - label: He leído la [documentación](../../README.md) disponible.
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del bug
+      description: Una descripción clara y concisa del problema encontrado.
+      placeholder: "Al hacer X, ocurre Y en lugar de Z..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      description: Describe los pasos exactos para reproducir el comportamiento.
+      placeholder: |
+        1. Ir a '...'
+        2. Hacer clic en '...'
+        3. Desplazarse hasta '...'
+        4. Ver el error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento esperado
+      description: Describe qué esperabas que ocurriera.
+      placeholder: "Esperaba que..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamiento actual
+      description: Describe qué ocurrió realmente.
+      placeholder: "En cambio, ocurrió..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Capturas de pantalla o videos
+      description: Si aplica, adjunta capturas o grabaciones que ilustren el problema.
+      placeholder: "Arrastra y suelta imágenes aquí..."
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema operativo
+      options:
+        - Windows
+        - macOS
+        - Linux (Ubuntu/Debian)
+        - Linux (Fedora/RHEL)
+        - Linux (otro)
+        - Android
+        - iOS
+        - Otro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Navegador (si aplica)
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Opera
+        - No aplica
+        - Otro
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: Versión de RubiVault
+      description: ¿Qué versión de RubiVault estás usando?
+      placeholder: "ej. v1.2.3"
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto adicional
+      description: Cualquier otra información relevante sobre el problema.
+      placeholder: "Ocurre solo cuando... / Comenzó a ocurrir después de..."

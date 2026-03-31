@@ -1,0 +1,35 @@
+name: 💬 Pregunta / Question
+description: Haz una pregunta sobre RubiVault
+title: "[QUESTION] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¿Tienes una duda sobre RubiVault? ¡Estamos aquí para ayudarte! Antes de abrir este issue, considera revisar la documentación disponible.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Verificación previa
+      options:
+        - label: He buscado en los [issues existentes](../../issues) y no encontré una respuesta a mi pregunta.
+          required: true
+        - label: He revisado la [documentación](../../README.md) disponible.
+          required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Pregunta
+      description: Describe tu pregunta con el mayor detalle posible.
+      placeholder: "¿Cómo puedo...? / ¿Por qué...? / ¿Qué significa...?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Proporciona cualquier información adicional que pueda ayudar a responder tu pregunta.
+      placeholder: "Estoy intentando hacer... / He probado... pero no funciona porque..."
