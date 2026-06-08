@@ -1,5 +1,5 @@
 # The bug hunting is closed. 
-# Any finding related to this campaing please write it to bugs@rubidex.ai
+# Any finding related to this campaingn please write it to bugs@rubidex.ai
 
 # 🐛 RubiVault — Issue Tracker
 
