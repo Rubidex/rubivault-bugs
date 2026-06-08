@@ -1,3 +1,6 @@
+# The bug hunting is closed. 
+# Any finding related to this campaing please write it to bugs@rubidex.ai
+
 # 🐛 RubiVault — Issue Tracker
 
 > Repositorio centralizado para reportar bugs, solicitar funcionalidades y dar seguimiento a mejoras del proyecto **RubiVault**.
